@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #333447;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.8;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  min-height: 0.125rem;
+}
+
+.col {
+  width: 96%;
+}
+
+
+.col-sm {
+  width: 46%;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+
+  .col {
+    width: 46%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .container {
+    width: 100%;
+  }
+}
+
+.header{
+  text-align: center;
+  padding: 1px;
+  background: #344055;
+}
+
+.userside{
+  background: #eeeeee;
+  text-align:center;
+}
+
+.adminside{
+  text-align:center;
+}

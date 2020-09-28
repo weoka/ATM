@@ -46,11 +46,11 @@ function addBill(bill, q){
     })
 }
 
-function transactionHistory(q){
+function transactionCreator(q){
     //generating timestamp of the transaction
     var currentDate = new Date();
     var dateString = currentDate.getDate() + "-" +(currentDate.getMonth() + 1) + "-" + currentDate.getFullYear();
-    transactions.push(new Transaction(q,dateString))
+    transactions.push(new Transaction(q,dateString));
 }
 
 function withdraw(q){
