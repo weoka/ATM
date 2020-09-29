@@ -62,10 +62,16 @@ function withdraw(q){
                 {
                     break;
                 }
+                
             }
         }
 
-    return served;
+    if(served.length == 0){
+        return false;
+    }
+    else{
+        return served;
+    }
 
     }
     else{
