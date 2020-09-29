@@ -52,7 +52,7 @@ function withdraw(q){
             if(Math.trunc(requested/x.type) >= 1){
                 var count = (requested/x.type).toFixed(0);
                 for(y=0;y<count;y++){
-                    if(x.availableQuantity > 0){
+                    if(x.availableQuantity > 0 && Math.trunc(requested/x.type) >= 1){
                         served.push(x.type);
                         requested -= x.type;
                         x.availableQuantity -= 1;
