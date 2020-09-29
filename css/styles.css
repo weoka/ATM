@@ -45,7 +45,7 @@ h6 {
 p {
   font-size: 20px;
   font-weight: 200;
-  line-height: 1.8;
+  line-height: 1;
 }
 
 .font-light {
@@ -91,7 +91,7 @@ p {
 
 .row [class^="col"] {
   float: left;
-  min-height: 0.125rem;
+  min-height: 100%;
 }
 
 .col {
@@ -100,7 +100,7 @@ p {
 
 
 .col-sm {
-  width: 46%;
+  width: 50%;
 }
 
 .row::after {
@@ -113,6 +113,26 @@ p {
   display: none;
 }
 
+input, button{
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+}
+
+button{
+  background: #266DD3;
+  color: #fff;
+}
+
+.cajero input{
+  background: #eeeeee;
+}
+
+li{
+  list-style: none;
+}
+
+
 @media only screen and (min-width: 33.75em) {  /* 540px */
   .container {
     width: 80%;
@@ -122,7 +142,7 @@ p {
 @media only screen and (min-width: 45em) {  /* 720px */
 
   .col {
-    width: 46%;
+    width: 50%;
   }
 
   .hidden-sm {
@@ -139,14 +159,64 @@ p {
 .header{
   text-align: center;
   padding: 1px;
-  background: #344055;
+  background: #266DD3;
 }
 
-.userside{
+.header h1:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background-image:url('../img/atm.svg');
+  background-size: 70px 70px;
+  width: 70px;
+  height: 70px;
+}
+
+.side{
+  height: 100vh;
+  text-align:center;
+}
+
+.user{
   background: #eeeeee;
-  text-align:center;
 }
 
-.adminside{
-  text-align:center;
+.user li{
+  padding: 35px 40px;
+  font-size: 20px;
 }
+
+.user li:nth-child(odd){
+  background: #FFF;
+}
+
+.user li:nth-child(even){
+  background: #eeeeee;
+}
+
+.user ul{
+  text-align: left;
+  padding: 0;
+  position: relative;
+}
+
+.user ul li:before{
+  content: "-";
+  color: red;
+  font-size: 50px;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+.user h3{
+  text-align: left;
+  padding-left:40px;
+}
+
+.side h2 .notes{
+  font-size:18px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+

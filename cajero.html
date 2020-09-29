@@ -8,20 +8,30 @@
 </head>
 <body>
     <div class="header">
-        <h1>Cashier</h1>
+        <h1>ATM</h1>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col userside">
-                <h2>User side</h2>
-                <p><b>Saldo:</b> $700</p>
+            <div class="col side user">
+                <div>
+                    <h2> <span id="name"></span> <span class="notes">Saldo:<span class="notes" id="balance_qnty">0</span></h2>
+                    <input type="number" id="quantity" placeholder="Cantidad">
+                    <button onclick="frontendHandler('w')">Retirar saldo</button>
+                </div>
+                <h3>Transacciones</h3>
+                <ul id="transactions">
+                </ul>
             </div>
-            <div class="col adminside">
-                <h2>Admin side</h2>
+            <div class="col side cajero">
+                <h2>Administrador de cajero <span class="notes">Disponible:<span class="notes" id="avilable_qnty">0€</span></h2>
+                <div>
+                    <input type="number" id="nomination" placeholder="Nominación billete"><br><br>
+                    <input type="number" id="b_quantity" placeholder="Cantidad"><br><br>
+                    <button onclick="frontendHandler('a')">Añadir billetes</button>
+                </div>
             </div>
         </div>
     </div>
 </body>
-<script src="classes.js"></script>
-<script src="div.js"></script>
+<script src="handler.js"></script>
 </html>
