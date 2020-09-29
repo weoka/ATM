@@ -63,9 +63,6 @@ function withdraw(q){
                     break;
                 }
             }
-            else{
-                break;
-            }
         }
 
     return served;
