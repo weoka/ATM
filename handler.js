@@ -64,7 +64,7 @@ function withdraw(q){
                 }
             }
             else{
-                return false;
+                break;
             }
         }
 
